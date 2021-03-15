@@ -1,0 +1,3 @@
+/home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles/3dr.dir
