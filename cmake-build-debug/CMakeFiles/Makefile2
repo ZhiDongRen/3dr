@@ -53,7 +53,9 @@ CMAKE_BINARY_DIR = /home/huake/CLionProjects/3dr/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/3dr.dir/all
+all: CMakeFiles/gp3.dir/all
+all: CMakeFiles/convex.dir/all
+all: CMakeFiles/Bspline.dir/all
 
 .PHONY : all
 
@@ -63,36 +65,92 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/3dr.dir/clean
+clean: CMakeFiles/gp3.dir/clean
+clean: CMakeFiles/convex.dir/clean
+clean: CMakeFiles/Bspline.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/3dr.dir
+# Target rules for target CMakeFiles/gp3.dir
 
 # All Build rule for target.
-CMakeFiles/3dr.dir/all:
-	$(MAKE) -f CMakeFiles/3dr.dir/build.make CMakeFiles/3dr.dir/depend
-	$(MAKE) -f CMakeFiles/3dr.dir/build.make CMakeFiles/3dr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 3dr"
-.PHONY : CMakeFiles/3dr.dir/all
+CMakeFiles/gp3.dir/all:
+	$(MAKE) -f CMakeFiles/gp3.dir/build.make CMakeFiles/gp3.dir/depend
+	$(MAKE) -f CMakeFiles/gp3.dir/build.make CMakeFiles/gp3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target gp3"
+.PHONY : CMakeFiles/gp3.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/3dr.dir/rule: cmake_check_build_system
+CMakeFiles/gp3.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/3dr.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gp3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/3dr.dir/rule
+.PHONY : CMakeFiles/gp3.dir/rule
 
 # Convenience name for target.
-3dr: CMakeFiles/3dr.dir/rule
+gp3: CMakeFiles/gp3.dir/rule
 
-.PHONY : 3dr
+.PHONY : gp3
 
 # clean rule for target.
-CMakeFiles/3dr.dir/clean:
-	$(MAKE) -f CMakeFiles/3dr.dir/build.make CMakeFiles/3dr.dir/clean
-.PHONY : CMakeFiles/3dr.dir/clean
+CMakeFiles/gp3.dir/clean:
+	$(MAKE) -f CMakeFiles/gp3.dir/build.make CMakeFiles/gp3.dir/clean
+.PHONY : CMakeFiles/gp3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/convex.dir
+
+# All Build rule for target.
+CMakeFiles/convex.dir/all:
+	$(MAKE) -f CMakeFiles/convex.dir/build.make CMakeFiles/convex.dir/depend
+	$(MAKE) -f CMakeFiles/convex.dir/build.make CMakeFiles/convex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target convex"
+.PHONY : CMakeFiles/convex.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/convex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/convex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/convex.dir/rule
+
+# Convenience name for target.
+convex: CMakeFiles/convex.dir/rule
+
+.PHONY : convex
+
+# clean rule for target.
+CMakeFiles/convex.dir/clean:
+	$(MAKE) -f CMakeFiles/convex.dir/build.make CMakeFiles/convex.dir/clean
+.PHONY : CMakeFiles/convex.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Bspline.dir
+
+# All Build rule for target.
+CMakeFiles/Bspline.dir/all:
+	$(MAKE) -f CMakeFiles/Bspline.dir/build.make CMakeFiles/Bspline.dir/depend
+	$(MAKE) -f CMakeFiles/Bspline.dir/build.make CMakeFiles/Bspline.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Bspline"
+.PHONY : CMakeFiles/Bspline.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Bspline.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Bspline.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Bspline.dir/rule
+
+# Convenience name for target.
+Bspline: CMakeFiles/Bspline.dir/rule
+
+.PHONY : Bspline
+
+# clean rule for target.
+CMakeFiles/Bspline.dir/clean:
+	$(MAKE) -f CMakeFiles/Bspline.dir/build.make CMakeFiles/Bspline.dir/clean
+.PHONY : CMakeFiles/Bspline.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

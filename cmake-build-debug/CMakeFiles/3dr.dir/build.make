@@ -57,35 +57,33 @@ include CMakeFiles/3dr.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/3dr.dir/flags.make
 
-CMakeFiles/3dr.dir/main.cpp.o: CMakeFiles/3dr.dir/flags.make
-CMakeFiles/3dr.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/3dr.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/3dr.dir/main.cpp.o -c /home/huake/CLionProjects/3dr/main.cpp
+CMakeFiles/3dr.dir/gp3.cpp.o: CMakeFiles/3dr.dir/flags.make
+CMakeFiles/3dr.dir/gp3.cpp.o: ../gp3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/huake/CLionProjects/3dr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/3dr.dir/gp3.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/3dr.dir/gp3.cpp.o -c /home/huake/CLionProjects/3dr/gp3.cpp
 
-CMakeFiles/3dr.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/3dr.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/huake/CLionProjects/3dr/main.cpp > CMakeFiles/3dr.dir/main.cpp.i
+CMakeFiles/3dr.dir/gp3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/3dr.dir/gp3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/huake/CLionProjects/3dr/gp3.cpp > CMakeFiles/3dr.dir/gp3.cpp.i
 
-CMakeFiles/3dr.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/3dr.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/huake/CLionProjects/3dr/main.cpp -o CMakeFiles/3dr.dir/main.cpp.s
+CMakeFiles/3dr.dir/gp3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/3dr.dir/gp3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/huake/CLionProjects/3dr/gp3.cpp -o CMakeFiles/3dr.dir/gp3.cpp.s
 
 # Object files for target 3dr
 3dr_OBJECTS = \
-"CMakeFiles/3dr.dir/main.cpp.o"
+"CMakeFiles/3dr.dir/gp3.cpp.o"
 
 # External object files for target 3dr
 3dr_EXTERNAL_OBJECTS =
 
-3dr: CMakeFiles/3dr.dir/main.cpp.o
+3dr: CMakeFiles/3dr.dir/gp3.cpp.o
 3dr: CMakeFiles/3dr.dir/build.make
 3dr: /usr/local/lib/libpcl_surface.so
-3dr: /usr/local/lib/libpcl_keypoints.so
+3dr: /usr/local/lib/libpcl_registration.so
 3dr: /usr/local/lib/libpcl_tracking.so
-3dr: /usr/local/lib/libpcl_recognition.so
 3dr: /usr/local/lib/libpcl_stereo.so
 3dr: /usr/local/lib/libpcl_outofcore.so
-3dr: /usr/local/lib/libpcl_people.so
 3dr: /usr/lib/x86_64-linux-gnu/libboost_system.so
 3dr: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 3dr: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
@@ -93,6 +91,8 @@ CMakeFiles/3dr.dir/main.cpp.s: cmake_force
 3dr: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
 3dr: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 3dr: /usr/lib/x86_64-linux-gnu/libqhull.so
+3dr: /usr/lib/libOpenNI.so
+3dr: /usr/lib/libOpenNI2.so
 3dr: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-6.3.so.6.3.0
 3dr: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-6.3.so.6.3.0
 3dr: /usr/lib/x86_64-linux-gnu/libfreetype.so
@@ -108,18 +108,15 @@ CMakeFiles/3dr.dir/main.cpp.s: cmake_force
 3dr: /usr/lib/x86_64-linux-gnu/libvtkFiltersTexture-6.3.so.6.3.0
 3dr: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.3.so.6.3.0
 3dr: /usr/lib/x86_64-linux-gnu/libvtkRenderingLabel-6.3.so.6.3.0
-3dr: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+3dr: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 3dr: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 3dr: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 3dr: /usr/lib/x86_64-linux-gnu/libboost_system.so
 3dr: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
 3dr: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-3dr: /usr/local/lib/libpcl_registration.so
-3dr: /usr/local/lib/libpcl_segmentation.so
 3dr: /usr/local/lib/libpcl_features.so
 3dr: /usr/local/lib/libpcl_filters.so
 3dr: /usr/local/lib/libpcl_sample_consensus.so
-3dr: /usr/local/lib/libpcl_ml.so
 3dr: /usr/local/lib/libpcl_visualization.so
 3dr: /usr/local/lib/libpcl_search.so
 3dr: /usr/local/lib/libpcl_kdtree.so
@@ -131,6 +128,8 @@ CMakeFiles/3dr.dir/main.cpp.s: cmake_force
 3dr: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
 3dr: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 3dr: /usr/lib/x86_64-linux-gnu/libqhull.so
+3dr: /usr/lib/libOpenNI.so
+3dr: /usr/lib/libOpenNI2.so
 3dr: /usr/lib/x86_64-linux-gnu/libjpeg.so
 3dr: /usr/lib/x86_64-linux-gnu/libpng.so
 3dr: /usr/lib/x86_64-linux-gnu/libtiff.so

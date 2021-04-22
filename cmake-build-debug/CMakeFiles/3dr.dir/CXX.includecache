@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/huake/CLionProjects/3dr/main.cpp
+/home/huake/CLionProjects/3dr/gp3.cpp
 pcl/point_types.h
 -
 pcl/io/pcd_io.h
@@ -2189,6 +2189,8 @@ pcl/pcl_macros.h
 -
 pcl/point_types.h
 -
+type_traits
+-
 
 /usr/local/include/pcl-1.11/pcl/common/concatenate.h
 type_traits
@@ -2567,7 +2569,7 @@ io.h
 -
 windows.h
 -
-BaseTsd.h
+basetsd.h
 -
 unistd.h
 -

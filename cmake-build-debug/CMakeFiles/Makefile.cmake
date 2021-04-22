@@ -24,8 +24,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/huake/Downloads/CLion-2020.1.1/clion-2020.1.1/bin/cmake/linux/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/huake/Downloads/CLion-2020.1.1/clion-2020.1.1/bin/cmake/linux/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake"
   "/home/huake/Downloads/CLion-2020.1.1/clion-2020.1.1/bin/cmake/linux/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake"
-  "/home/huake/Downloads/CLion-2020.1.1/clion-2020.1.1/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c"
-  "/home/huake/Downloads/CLion-2020.1.1/clion-2020.1.1/bin/cmake/linux/share/cmake-3.16/Modules/CheckIncludeFile.c.in"
   "/home/huake/Downloads/CLion-2020.1.1/clion-2020.1.1/bin/cmake/linux/share/cmake-3.16/Modules/CheckIncludeFile.cmake"
   "/home/huake/Downloads/CLion-2020.1.1/clion-2020.1.1/bin/cmake/linux/share/cmake-3.16/Modules/CheckLibraryExists.cmake"
   "/home/huake/Downloads/CLion-2020.1.1/clion-2020.1.1/bin/cmake/linux/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
@@ -121,7 +119,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake"
   "/usr/local/share/pcl-1.11/Modules/FindEigen.cmake"
   "/usr/local/share/pcl-1.11/Modules/FindFLANN.cmake"
+  "/usr/local/share/pcl-1.11/Modules/FindOpenNI.cmake"
+  "/usr/local/share/pcl-1.11/Modules/FindOpenNI2.cmake"
   "/usr/local/share/pcl-1.11/Modules/FindQhull.cmake"
+  "/usr/local/share/pcl-1.11/Modules/Findlibusb.cmake"
   "/usr/local/share/pcl-1.11/PCLConfig.cmake"
   "/usr/local/share/pcl-1.11/PCLConfigVersion.cmake"
   )
@@ -139,5 +140,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/3dr.dir/DependInfo.cmake"
+  "CMakeFiles/gp3.dir/DependInfo.cmake"
+  "CMakeFiles/convex.dir/DependInfo.cmake"
+  "CMakeFiles/Bspline.dir/DependInfo.cmake"
   )

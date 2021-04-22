@@ -27,6 +27,252 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="gp3">
+				<Option output="/home/huake/CLionProjects/3dr/cmake-build-debug/gp3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huake/CLionProjects/3dr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)"/>
+					<Add option="-Dqh_QHpointer"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/usr/include/vtk-6.3"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/openni2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 gp3"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gp3/fast">
+				<Option output="/home/huake/CLionProjects/3dr/cmake-build-debug/gp3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huake/CLionProjects/3dr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)"/>
+					<Add option="-Dqh_QHpointer"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/usr/include/vtk-6.3"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/openni2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 gp3/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="convex">
+				<Option output="/home/huake/CLionProjects/3dr/cmake-build-debug/convex" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huake/CLionProjects/3dr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)"/>
+					<Add option="-Dqh_QHpointer"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/usr/include/vtk-6.3"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/openni2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 convex"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="convex/fast">
+				<Option output="/home/huake/CLionProjects/3dr/cmake-build-debug/convex" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huake/CLionProjects/3dr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)"/>
+					<Add option="-Dqh_QHpointer"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/usr/include/vtk-6.3"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/openni2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 convex/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Bspline">
+				<Option output="/home/huake/CLionProjects/3dr/cmake-build-debug/Bspline" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huake/CLionProjects/3dr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)"/>
+					<Add option="-Dqh_QHpointer"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/usr/include/vtk-6.3"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/openni2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 Bspline"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Bspline/fast">
+				<Option output="/home/huake/CLionProjects/3dr/cmake-build-debug/Bspline" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huake/CLionProjects/3dr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)"/>
+					<Add option="-Dqh_QHpointer"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/usr/include/vtk-6.3"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/openni2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 Bspline/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/huake/CLionProjects/3dr/cmake-build-debug"/>
 				<Option type="4"/>
@@ -37,89 +283,15 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="3dr">
-				<Option output="/home/huake/CLionProjects/3dr/cmake-build-debug/3dr" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/huake/CLionProjects/3dr/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)"/>
-					<Add option="-Dqh_QHpointer"/>
-					<Add option="-DDISABLE_PCAP"/>
-					<Add option="-DDISABLE_PNG"/>
-					<Add option="-DDISABLE_LIBUSB_1_0"/>
-					<Add option="-DQT_WIDGETS_LIB"/>
-					<Add option="-DQT_GUI_LIB"/>
-					<Add option="-DQT_CORE_LIB"/>
-					<Add directory="/usr/include/vtk-6.3"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/local/include/pcl-1.11"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 3dr"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="3dr/fast">
-				<Option output="/home/huake/CLionProjects/3dr/cmake-build-debug/3dr" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/huake/CLionProjects/3dr/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)"/>
-					<Add option="-Dqh_QHpointer"/>
-					<Add option="-DDISABLE_PCAP"/>
-					<Add option="-DDISABLE_PNG"/>
-					<Add option="-DDISABLE_LIBUSB_1_0"/>
-					<Add option="-DQT_WIDGETS_LIB"/>
-					<Add option="-DQT_GUI_LIB"/>
-					<Add option="-DQT_CORE_LIB"/>
-					<Add directory="/usr/include/vtk-6.3"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/local/include/pcl-1.11"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 3dr/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huake/CLionProjects/3dr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
-		<Unit filename="/home/huake/CLionProjects/3dr/main.cpp">
-			<Option target="3dr"/>
+		<Unit filename="/home/huake/CLionProjects/3dr/Bspline.cpp">
+			<Option target="Bspline"/>
+		</Unit>
+		<Unit filename="/home/huake/CLionProjects/3dr/convex.cpp">
+			<Option target="convex"/>
+		</Unit>
+		<Unit filename="/home/huake/CLionProjects/3dr/gp3.cpp">
+			<Option target="gp3"/>
 		</Unit>
 		<Unit filename="/home/huake/CLionProjects/3dr/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -136,7 +308,16 @@
 		<Unit filename="/home/huake/CLionProjects/3dr/../../../../usr/local/share/pcl-1.11/Modules/FindFLANN.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\pcl-1.11\Modules\"/>
 		</Unit>
+		<Unit filename="/home/huake/CLionProjects/3dr/../../../../usr/local/share/pcl-1.11/Modules/FindOpenNI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\pcl-1.11\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huake/CLionProjects/3dr/../../../../usr/local/share/pcl-1.11/Modules/FindOpenNI2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\pcl-1.11\Modules\"/>
+		</Unit>
 		<Unit filename="/home/huake/CLionProjects/3dr/../../../../usr/local/share/pcl-1.11/Modules/FindQhull.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\pcl-1.11\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huake/CLionProjects/3dr/../../../../usr/local/share/pcl-1.11/Modules/Findlibusb.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\pcl-1.11\Modules\"/>
 		</Unit>
 		<Unit filename="/home/huake/CLionProjects/3dr/../../../../usr/lib/cmake/vtk-6.3/UseVTK.cmake">

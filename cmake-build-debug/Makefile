@@ -111,44 +111,124 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 3dr
+# Target rules for targets named gp3
 
 # Build rule for target.
-3dr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 3dr
-.PHONY : 3dr
+gp3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gp3
+.PHONY : gp3
 
 # fast build rule for target.
-3dr/fast:
-	$(MAKE) -f CMakeFiles/3dr.dir/build.make CMakeFiles/3dr.dir/build
-.PHONY : 3dr/fast
+gp3/fast:
+	$(MAKE) -f CMakeFiles/gp3.dir/build.make CMakeFiles/gp3.dir/build
+.PHONY : gp3/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named convex
 
-.PHONY : main.o
+# Build rule for target.
+convex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 convex
+.PHONY : convex
+
+# fast build rule for target.
+convex/fast:
+	$(MAKE) -f CMakeFiles/convex.dir/build.make CMakeFiles/convex.dir/build
+.PHONY : convex/fast
+
+#=============================================================================
+# Target rules for targets named Bspline
+
+# Build rule for target.
+Bspline: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Bspline
+.PHONY : Bspline
+
+# fast build rule for target.
+Bspline/fast:
+	$(MAKE) -f CMakeFiles/Bspline.dir/build.make CMakeFiles/Bspline.dir/build
+.PHONY : Bspline/fast
+
+Bspline.o: Bspline.cpp.o
+
+.PHONY : Bspline.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/3dr.dir/build.make CMakeFiles/3dr.dir/main.cpp.o
-.PHONY : main.cpp.o
+Bspline.cpp.o:
+	$(MAKE) -f CMakeFiles/Bspline.dir/build.make CMakeFiles/Bspline.dir/Bspline.cpp.o
+.PHONY : Bspline.cpp.o
 
-main.i: main.cpp.i
+Bspline.i: Bspline.cpp.i
 
-.PHONY : main.i
+.PHONY : Bspline.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/3dr.dir/build.make CMakeFiles/3dr.dir/main.cpp.i
-.PHONY : main.cpp.i
+Bspline.cpp.i:
+	$(MAKE) -f CMakeFiles/Bspline.dir/build.make CMakeFiles/Bspline.dir/Bspline.cpp.i
+.PHONY : Bspline.cpp.i
 
-main.s: main.cpp.s
+Bspline.s: Bspline.cpp.s
 
-.PHONY : main.s
+.PHONY : Bspline.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/3dr.dir/build.make CMakeFiles/3dr.dir/main.cpp.s
-.PHONY : main.cpp.s
+Bspline.cpp.s:
+	$(MAKE) -f CMakeFiles/Bspline.dir/build.make CMakeFiles/Bspline.dir/Bspline.cpp.s
+.PHONY : Bspline.cpp.s
+
+convex.o: convex.cpp.o
+
+.PHONY : convex.o
+
+# target to build an object file
+convex.cpp.o:
+	$(MAKE) -f CMakeFiles/convex.dir/build.make CMakeFiles/convex.dir/convex.cpp.o
+.PHONY : convex.cpp.o
+
+convex.i: convex.cpp.i
+
+.PHONY : convex.i
+
+# target to preprocess a source file
+convex.cpp.i:
+	$(MAKE) -f CMakeFiles/convex.dir/build.make CMakeFiles/convex.dir/convex.cpp.i
+.PHONY : convex.cpp.i
+
+convex.s: convex.cpp.s
+
+.PHONY : convex.s
+
+# target to generate assembly for a file
+convex.cpp.s:
+	$(MAKE) -f CMakeFiles/convex.dir/build.make CMakeFiles/convex.dir/convex.cpp.s
+.PHONY : convex.cpp.s
+
+gp3.o: gp3.cpp.o
+
+.PHONY : gp3.o
+
+# target to build an object file
+gp3.cpp.o:
+	$(MAKE) -f CMakeFiles/gp3.dir/build.make CMakeFiles/gp3.dir/gp3.cpp.o
+.PHONY : gp3.cpp.o
+
+gp3.i: gp3.cpp.i
+
+.PHONY : gp3.i
+
+# target to preprocess a source file
+gp3.cpp.i:
+	$(MAKE) -f CMakeFiles/gp3.dir/build.make CMakeFiles/gp3.dir/gp3.cpp.i
+.PHONY : gp3.cpp.i
+
+gp3.s: gp3.cpp.s
+
+.PHONY : gp3.s
+
+# target to generate assembly for a file
+gp3.cpp.s:
+	$(MAKE) -f CMakeFiles/gp3.dir/build.make CMakeFiles/gp3.dir/gp3.cpp.s
+.PHONY : gp3.cpp.s
 
 # Help Target
 help:
@@ -157,11 +237,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... gp3"
+	@echo "... convex"
+	@echo "... Bspline"
 	@echo "... edit_cache"
-	@echo "... 3dr"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Bspline.o"
+	@echo "... Bspline.i"
+	@echo "... Bspline.s"
+	@echo "... convex.o"
+	@echo "... convex.i"
+	@echo "... convex.s"
+	@echo "... gp3.o"
+	@echo "... gp3.i"
+	@echo "... gp3.s"
 .PHONY : help
 
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "3dr"
   "3dr.pdb"
-  "CMakeFiles/3dr.dir/main.cpp.o"
+  "CMakeFiles/3dr.dir/gp3.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

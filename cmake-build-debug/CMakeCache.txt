@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a file.
+/usr/local/include/pcl-1.11:PATH=/usr/local/include/pcl-1.11-NOTFOUND
+
 //Value Computed by CMake
 3dr_BINARY_DIR:STATIC=/home/huake/CLionProjects/3dr/cmake-build-debug
 
@@ -301,11 +304,38 @@ FLANN_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libflann_cpp.so
 //Path to a library.
 FLANN_LIBRARY_DEBUG:FILEPATH=FLANN_LIBRARY_DEBUG-NOTFOUND
 
-//Path to a file.
-LIBUSB_1_INCLUDE_DIR:PATH=LIBUSB_1_INCLUDE_DIR-NOTFOUND
+//Path to a library.
+FLANN_LIBRARY_DEBUG_SHARED:FILEPATH=FLANN_LIBRARY_DEBUG_SHARED-NOTFOUND
 
 //Path to a library.
-LIBUSB_1_LIBRARY:FILEPATH=LIBUSB_1_LIBRARY-NOTFOUND
+FLANN_LIBRARY_DEBUG_STATIC:FILEPATH=FLANN_LIBRARY_DEBUG_STATIC-NOTFOUND
+
+//Path to a library.
+FLANN_LIBRARY_SHARED:FILEPATH=/usr/lib/x86_64-linux-gnu/libflann_cpp.so
+
+//Path to a library.
+FLANN_LIBRARY_STATIC:FILEPATH=/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+
+//Path to a file.
+LIBUSB_1_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+LIBUSB_1_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libusb-1.0.so
+
+//Path to a file.
+OPENNI2_INCLUDE_DIR:PATH=/usr/include/openni2
+
+//Path to a library.
+OPENNI2_LIBRARY:FILEPATH=/usr/lib/libOpenNI2.so
+
+//Path to a file.
+OPENNI_INCLUDE_DIR:PATH=/usr/include/ni
+
+//Path to a library.
+OPENNI_LIBRARY:FILEPATH=/usr/lib/libOpenNI.so
+
+//The directory containing a CMake configuration file for PCL-1.11.
+PCL-1.11_DIR:PATH=PCL-1.11_DIR-NOTFOUND
 
 //path to 2d headers
 PCL_2D_INCLUDE_DIR:PATH=/usr/local/include/pcl-1.11
@@ -514,11 +544,26 @@ VTK_DIR:PATH=/usr/lib/cmake/vtk-6.3
 //The directory containing a CMake configuration file for flann.
 flann_DIR:PATH=flann_DIR-NOTFOUND
 
+//Path to a file.
+libusb_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+libusb_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libusb-1.0.so
+
 //Path to a library.
 pkgcfg_lib_PC_FLANN_flann:FILEPATH=/usr/lib/x86_64-linux-gnu/libflann.so
 
 //Path to a library.
 pkgcfg_lib_PC_FLANN_flann_cpp:FILEPATH=/usr/lib/x86_64-linux-gnu/libflann_cpp.so
+
+//Path to a library.
+pkgcfg_lib_PC_OPENNI2_OpenNI2:FILEPATH=/usr/lib/libOpenNI2.so
+
+//Path to a library.
+pkgcfg_lib_PC_OPENNI_OpenNI:FILEPATH=/usr/lib/libOpenNI.so
+
+//Path to a library.
+pkgcfg_lib_PC_libusb_usb-1.0:FILEPATH=/usr/lib/x86_64-linux-gnu/libusb-1.0.so
 
 
 ########################
@@ -733,9 +778,13 @@ FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/include][cfound components: th
 //Details about finding Eigen
 FIND_PACKAGE_MESSAGE_DETAILS_Eigen:INTERNAL=[/usr/include/eigen3][v(3.1)]
 //Details about finding FLANN
-FIND_PACKAGE_MESSAGE_DETAILS_FLANN:INTERNAL=[/usr/lib/x86_64-linux-gnu/libflann_cpp.so][/usr/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_FLANN:INTERNAL=[/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a][/usr/include][v()]
+//Details about finding OpenNI
+FIND_PACKAGE_MESSAGE_DETAILS_OpenNI:INTERNAL=[/usr/lib/libOpenNI.so][/usr/include/ni][v1.5.4.0()]
+//Details about finding OpenNI2
+FIND_PACKAGE_MESSAGE_DETAILS_OpenNI2:INTERNAL=[/usr/lib/libOpenNI2.so][/usr/include/openni2][v2.2.0.33()]
 //Details about finding PCL
-FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;vtkChartsCore;vtkCommonColor;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkInfovisCore;vtkFiltersExtraction;vtkCommonExecutionModel;vtkFiltersCore;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkftgl;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkIOCore;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingVolume;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsCore;vtkViewsContext2D;vtkRenderingOpenGL;vtkRenderingQt;vtkFiltersTexture;vtkGUISupportQt;vtkRenderingLabel;FLANN::FLANN][/usr/local/include/pcl-1.11;/usr/include/eigen3;/usr/include;/usr/include/vtk-6.3;/usr/include/freetype2;/usr/include/x86_64-linux-gnu][v(1.11)]
+FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_visualization;pcl_surface;pcl_registration;pcl_tracking;pcl_stereo;pcl_outofcore;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkInfovisCore;vtkFiltersExtraction;vtkCommonExecutionModel;vtkFiltersCore;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkftgl;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkIOCore;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingVolume;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsCore;vtkViewsContext2D;vtkRenderingOpenGL;vtkRenderingQt;vtkFiltersTexture;vtkGUISupportQt;vtkRenderingLabel;FLANN::FLANN][/usr/local/include/pcl-1.11;/usr/include/eigen3;/usr/include;/usr/include/vtk-6.3;/usr/include/freetype2;/usr/include/x86_64-linux-gnu;/usr/include/ni;/usr/include/openni2][v(1.2)]
 //Details about finding PCL_2D
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_2D:INTERNAL=[/usr/local/include/pcl-1.11][v()]
 //Details about finding PCL_COMMON
@@ -782,6 +831,10 @@ FIND_PACKAGE_MESSAGE_DETAILS_PCL_VISUALIZATION:INTERNAL=[/usr/local/lib/libpcl_v
 FIND_PACKAGE_MESSAGE_DETAILS_Qhull:INTERNAL=[optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so][/usr/include][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding libusb
+FIND_PACKAGE_MESSAGE_DETAILS_libusb:INTERNAL=[/usr/lib/x86_64-linux-gnu/libusb-1.0.so][/usr/include][v()]
+//Details about finding libusb-1.0
+FIND_PACKAGE_MESSAGE_DETAILS_libusb-1.0:INTERNAL=[/usr/include][v()]
 //ADVANCED property for variable: PCL_2D_INCLUDE_DIR
 PCL_2D_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_COMMON_INCLUDE_DIR
@@ -970,6 +1023,111 @@ PC_FLANN_flann_INCLUDEDIR:INTERNAL=
 PC_FLANN_flann_LIBDIR:INTERNAL=
 PC_FLANN_flann_PREFIX:INTERNAL=
 PC_FLANN_flann_VERSION:INTERNAL=
+PC_OPENNI2_CFLAGS:INTERNAL=-I/usr/include/openni2
+PC_OPENNI2_CFLAGS_I:INTERNAL=
+PC_OPENNI2_CFLAGS_OTHER:INTERNAL=
+PC_OPENNI2_FOUND:INTERNAL=1
+PC_OPENNI2_INCLUDEDIR:INTERNAL=/usr/include/openni2
+PC_OPENNI2_INCLUDE_DIRS:INTERNAL=/usr/include/openni2
+PC_OPENNI2_LDFLAGS:INTERNAL=-lOpenNI2
+PC_OPENNI2_LDFLAGS_OTHER:INTERNAL=
+PC_OPENNI2_LIBDIR:INTERNAL=/usr/lib
+PC_OPENNI2_LIBRARIES:INTERNAL=OpenNI2
+PC_OPENNI2_LIBRARY_DIRS:INTERNAL=
+PC_OPENNI2_LIBS:INTERNAL=
+PC_OPENNI2_LIBS_L:INTERNAL=
+PC_OPENNI2_LIBS_OTHER:INTERNAL=
+PC_OPENNI2_LIBS_PATHS:INTERNAL=
+PC_OPENNI2_MODULE_NAME:INTERNAL=libopenni2
+PC_OPENNI2_PREFIX:INTERNAL=/usr
+PC_OPENNI2_STATIC_CFLAGS:INTERNAL=-I/usr/include/openni2
+PC_OPENNI2_STATIC_CFLAGS_I:INTERNAL=
+PC_OPENNI2_STATIC_CFLAGS_OTHER:INTERNAL=
+PC_OPENNI2_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/openni2
+PC_OPENNI2_STATIC_LDFLAGS:INTERNAL=-lOpenNI2
+PC_OPENNI2_STATIC_LDFLAGS_OTHER:INTERNAL=
+PC_OPENNI2_STATIC_LIBDIR:INTERNAL=
+PC_OPENNI2_STATIC_LIBRARIES:INTERNAL=OpenNI2
+PC_OPENNI2_STATIC_LIBRARY_DIRS:INTERNAL=
+PC_OPENNI2_STATIC_LIBS:INTERNAL=
+PC_OPENNI2_STATIC_LIBS_L:INTERNAL=
+PC_OPENNI2_STATIC_LIBS_OTHER:INTERNAL=
+PC_OPENNI2_STATIC_LIBS_PATHS:INTERNAL=
+PC_OPENNI2_VERSION:INTERNAL=2.2.0.3
+PC_OPENNI2_libopenni2_INCLUDEDIR:INTERNAL=
+PC_OPENNI2_libopenni2_LIBDIR:INTERNAL=
+PC_OPENNI2_libopenni2_PREFIX:INTERNAL=
+PC_OPENNI2_libopenni2_VERSION:INTERNAL=
+PC_OPENNI_CFLAGS:INTERNAL=-I/usr/include/ni
+PC_OPENNI_CFLAGS_I:INTERNAL=
+PC_OPENNI_CFLAGS_OTHER:INTERNAL=
+PC_OPENNI_FOUND:INTERNAL=1
+PC_OPENNI_INCLUDEDIR:INTERNAL=/usr/include/ni
+PC_OPENNI_INCLUDE_DIRS:INTERNAL=/usr/include/ni
+PC_OPENNI_LDFLAGS:INTERNAL=-lOpenNI
+PC_OPENNI_LDFLAGS_OTHER:INTERNAL=
+PC_OPENNI_LIBDIR:INTERNAL=/usr/lib
+PC_OPENNI_LIBRARIES:INTERNAL=OpenNI
+PC_OPENNI_LIBRARY_DIRS:INTERNAL=
+PC_OPENNI_LIBS:INTERNAL=
+PC_OPENNI_LIBS_L:INTERNAL=
+PC_OPENNI_LIBS_OTHER:INTERNAL=
+PC_OPENNI_LIBS_PATHS:INTERNAL=
+PC_OPENNI_MODULE_NAME:INTERNAL=libopenni
+PC_OPENNI_PREFIX:INTERNAL=/usr
+PC_OPENNI_STATIC_CFLAGS:INTERNAL=-I/usr/include/ni
+PC_OPENNI_STATIC_CFLAGS_I:INTERNAL=
+PC_OPENNI_STATIC_CFLAGS_OTHER:INTERNAL=
+PC_OPENNI_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/ni
+PC_OPENNI_STATIC_LDFLAGS:INTERNAL=-lOpenNI
+PC_OPENNI_STATIC_LDFLAGS_OTHER:INTERNAL=
+PC_OPENNI_STATIC_LIBDIR:INTERNAL=
+PC_OPENNI_STATIC_LIBRARIES:INTERNAL=OpenNI
+PC_OPENNI_STATIC_LIBRARY_DIRS:INTERNAL=
+PC_OPENNI_STATIC_LIBS:INTERNAL=
+PC_OPENNI_STATIC_LIBS_L:INTERNAL=
+PC_OPENNI_STATIC_LIBS_OTHER:INTERNAL=
+PC_OPENNI_STATIC_LIBS_PATHS:INTERNAL=
+PC_OPENNI_VERSION:INTERNAL=1.5.4.0
+PC_OPENNI_libopenni_INCLUDEDIR:INTERNAL=
+PC_OPENNI_libopenni_LIBDIR:INTERNAL=
+PC_OPENNI_libopenni_PREFIX:INTERNAL=
+PC_OPENNI_libopenni_VERSION:INTERNAL=
+PC_libusb_CFLAGS:INTERNAL=-I/usr/include/libusb-1.0
+PC_libusb_CFLAGS_I:INTERNAL=
+PC_libusb_CFLAGS_OTHER:INTERNAL=
+PC_libusb_FOUND:INTERNAL=1
+PC_libusb_INCLUDEDIR:INTERNAL=/usr/include
+PC_libusb_INCLUDE_DIRS:INTERNAL=/usr/include/libusb-1.0
+PC_libusb_LDFLAGS:INTERNAL=-lusb-1.0
+PC_libusb_LDFLAGS_OTHER:INTERNAL=
+PC_libusb_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+PC_libusb_LIBRARIES:INTERNAL=usb-1.0
+PC_libusb_LIBRARY_DIRS:INTERNAL=
+PC_libusb_LIBS:INTERNAL=
+PC_libusb_LIBS_L:INTERNAL=
+PC_libusb_LIBS_OTHER:INTERNAL=
+PC_libusb_LIBS_PATHS:INTERNAL=
+PC_libusb_MODULE_NAME:INTERNAL=libusb-1.0
+PC_libusb_PREFIX:INTERNAL=/usr
+PC_libusb_STATIC_CFLAGS:INTERNAL=-I/usr/include/libusb-1.0
+PC_libusb_STATIC_CFLAGS_I:INTERNAL=
+PC_libusb_STATIC_CFLAGS_OTHER:INTERNAL=
+PC_libusb_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/libusb-1.0
+PC_libusb_STATIC_LDFLAGS:INTERNAL=-lusb-1.0;-ludev;-pthread
+PC_libusb_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+PC_libusb_STATIC_LIBDIR:INTERNAL=
+PC_libusb_STATIC_LIBRARIES:INTERNAL=usb-1.0;udev
+PC_libusb_STATIC_LIBRARY_DIRS:INTERNAL=
+PC_libusb_STATIC_LIBS:INTERNAL=
+PC_libusb_STATIC_LIBS_L:INTERNAL=
+PC_libusb_STATIC_LIBS_OTHER:INTERNAL=
+PC_libusb_STATIC_LIBS_PATHS:INTERNAL=
+PC_libusb_VERSION:INTERNAL=1.0.21
+PC_libusb_libusb-1.0_INCLUDEDIR:INTERNAL=
+PC_libusb_libusb-1.0_LIBDIR:INTERNAL=
+PC_libusb_libusb-1.0_PREFIX:INTERNAL=
+PC_libusb_libusb-1.0_VERSION:INTERNAL=
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_nproc
@@ -996,11 +1154,25 @@ _Boost_NAMESPACE_LAST:INTERNAL=boost
 _Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
 __pkg_config_arguments_PC_EIGEN:INTERNAL=eigen3
 __pkg_config_arguments_PC_FLANN:INTERNAL=flann
+__pkg_config_arguments_PC_OPENNI:INTERNAL=QUIET;libopenni
+__pkg_config_arguments_PC_OPENNI2:INTERNAL=QUIET;libopenni2
+__pkg_config_arguments_PC_libusb:INTERNAL=libusb-1.0
 __pkg_config_checked_PC_EIGEN:INTERNAL=1
 __pkg_config_checked_PC_FLANN:INTERNAL=1
+__pkg_config_checked_PC_OPENNI:INTERNAL=1
+__pkg_config_checked_PC_OPENNI2:INTERNAL=1
+__pkg_config_checked_PC_libusb:INTERNAL=1
+//ADVANCED property for variable: libusb_LIBRARIES
+libusb_LIBRARIES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_FLANN_flann
 pkgcfg_lib_PC_FLANN_flann-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_FLANN_flann_cpp
 pkgcfg_lib_PC_FLANN_flann_cpp-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PC_OPENNI2_OpenNI2
+pkgcfg_lib_PC_OPENNI2_OpenNI2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PC_OPENNI_OpenNI
+pkgcfg_lib_PC_OPENNI_OpenNI-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PC_libusb_usb-1.0
+pkgcfg_lib_PC_libusb_usb-1.0-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

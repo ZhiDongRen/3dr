@@ -1,9 +1,12 @@
 /home/huake/Downloads/CLion-2020.1.1/clion-2020.1.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/huake/CLionProjects/3dr
 -- Eigen found (include: /usr/include/eigen3, version: 3.3.4)
+-- Found Boost: /usr/include (found suitable version "1.65.1", minimum required is "1.55.0") found components: system filesystem date_time iostreams serialization regex 
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
 ** WARNING ** io features related to pcap will be disabled
 ** WARNING ** io features related to png will be disabled
--- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) 
-** WARNING ** io features related to libusb-1.0 will be disabled
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
 -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
 -- looking for PCL_COMMON
 -- looking for PCL_KDTREE
@@ -15,26 +18,12 @@
 -- looking for PCL_GEOMETRY
 -- looking for PCL_IO
 -- looking for PCL_FEATURES
--- looking for PCL_ML
--- looking for PCL_SEGMENTATION
 -- looking for PCL_VISUALIZATION
 -- looking for PCL_SURFACE
 -- looking for PCL_REGISTRATION
--- looking for PCL_KEYPOINTS
 -- looking for PCL_TRACKING
--- looking for PCL_RECOGNITION
 -- looking for PCL_STEREO
 -- looking for PCL_OUTOFCORE
--- looking for PCL_PEOPLE
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
--- Looking for pthread_create in pthreads
--- Looking for pthread_create in pthreads - not found
--- Looking for pthread_create in pthread
--- Looking for pthread_create in pthread - found
--- Found Threads: TRUE  
 -- Found Boost: /usr/include (found version "1.65.1") found components: thread chrono system date_time atomic 
 -- Configuring done
 -- Generating done
