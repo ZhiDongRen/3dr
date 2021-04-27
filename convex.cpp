@@ -36,19 +36,16 @@ int main(int argc, char *argv[]){
 
     cout<<"surface_hull_size:" << surface_hull->size();
 
-    //***************Visualizer******************//
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer);
     viewer->setBackgroundColor(255, 255, 255);
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> color_handler(cloud, 176, 224, 230);
-    viewer->addPointCloud(cloud, color_handler, "sample cloud");
-    viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 6, "sample cloud");
+    viewer->addPointCloud(cloud, color_handler, "point_cloud");
+    viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 6, "point_cloud");
 
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> color_handlerK(surface_hull, 255, 0, 0);
-    viewer->addPointCloud(surface_hull, color_handlerK, "point");
-    viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 6, "point");
+    viewer->addPointCloud(surface_hull, color_handlerK, "point_cloud");
+    viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 6, "point_cloud");
 
-    //viewer->addPolygon<pcl::PointXYZ>(surface_hull, 0, 0, 255, "polyline");
-    //viewer->addPolygonMesh<pcl::PointXYZ>(surface_hull, polygons, "polyline");
     while (!viewer->wasStopped())
     {
         viewer->spinOnce(100);
