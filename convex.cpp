@@ -34,7 +34,7 @@ int main(int argc, char *argv[]){
     pcl::PointCloud<pcl::PointXYZ>::Ptr surface_hull(new pcl::PointCloud<pcl::PointXYZ>);
     hull.reconstruct(*surface_hull, polygons);
 
-    cout << surface_hull->size();
+    cout<<"surface_hull_size:" << surface_hull->size();
 
     //***************Visualizer******************//
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer);
