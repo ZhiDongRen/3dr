@@ -42,9 +42,9 @@ main(int argc, char *argv[])
     pcl::GreedyProjectionTriangulation<pcl::PointNormal> gp3; 
     pcl::PolygonMesh triangles;
 
-    gp3.setSearchRadius(0.015); 
+    gp3.setSearchRadius(20); 
     gp3.setMu(2.5);                 
-    gp3.setMaximumNearestNeighbors(13000);   
+    gp3.setMaximumNearestNeighbors(5);   
     gp3.setMaximumSurfaceAngle(M_PI / 4);   
     gp3.setMinimumAngle(M_PI / 18);        
     gp3.setMaximumAngle(2 * M_PI / 3);      
@@ -53,13 +53,15 @@ main(int argc, char *argv[])
     gp3.setInputCloud(cloud_with_normals);
     gp3.setSearchMethod(tree2);          
     gp3.reconstruct(triangles);          
+    std::cout<<"traiangles:"<<triangles<<std::endl;
+
 
     std::vector<int> parts = gp3.getPartIDs();
     std::vector<int> states = gp3.getPointStates();
-
+    pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> color_handler(cloud, 255, 0, 0);
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer);
     viewer->setBackgroundColor(0, 0, 0);
-    viewer->addPolygonMesh(triangles, "mesh");
+    viewer->addPolygonMesh(triangles,color_handler, "poly_mesh");
     viewer->setBackgroundColor(255, 255, 255);
     viewer->setSize(800, 600);
     viewer->initCameraParameters();
